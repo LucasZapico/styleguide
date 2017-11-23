@@ -1,0 +1,90 @@
+/**-------------------------------**\
+**
+**        # STYLING OF THE COLOR PALETTE SECTION #
+**
+\**-------------------------------**/
+
+/*---------------------vvv PLAYGROUND vvv-------------------------*/
+
+.swatch-details {
+  flex: 1;
+
+  ul {
+    padding: 0;
+  }
+
+  li {
+    margin-top: 2em;
+    margin-bottom: 2em;
+    width: 100%;
+    list-style-type: none;
+    align-content: center;
+    text-align: center;
+    list-style-position: inside;
+
+    div {
+      margin: auto;
+    }
+  }
+}
+
+.primary-swatch {
+  margin-bottom: 2em;
+  width: 100%;
+}
+
+
+/*---------------------vvv STABLE vvv-------------------------*/
+.color-pallet-section {
+    padding-top: 1em;
+    padding-bottom: 1em;
+    border-width: 3px;
+}
+
+.swatch-section {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  list-style-type: none;
+  padding: 0;
+
+  div {
+
+  }
+}
+
+.swatch {
+  height: 5em;
+  width: 5em;
+  border-radius: 100%;
+  box-shadow: 2px 2px 5px grey;
+
+}
+
+.swatch.primary-swatch-one {
+  background-color: $glacier-primary;
+}
+
+.swatch.primary-swatch-two {
+  background-color: $storm-primary;
+}
+
+.swatch.primary-swatch-three {
+  background-color: $burnt-clay-primary;
+}
+
+.slate-swatch {
+  background-color: $slate;
+}
+
+.cloudy-swatch {
+  background-color: $cloudy;
+}
+
+.white-swatch {
+  background-color: $white;
+}
+
+.black-swatch {
+  background-color: $black;
+}

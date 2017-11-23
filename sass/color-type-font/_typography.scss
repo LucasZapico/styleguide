@@ -1,0 +1,153 @@
+/**-------------------------------**\
+**
+**       # TYPOGRAPHY #
+**Description: This file consists of SASS typography settings
+**
+\**-------------------------------**/
+
+/**
+**    FONT IMPORTS
+**/
+@import '_font.scss';
+
+
+
+/**
+**    HEADING TYPOGRAPHY VARS
+**
+**/
+
+/**
+**HEADING FONTS
+**/
+$h-font: 'Cormorant+Garamond','Quattrocento','Raleway', 'Lato','Roboto', sans-serif;
+$h1-font: 'Raleway', 'Lato', sans-serif;
+$h2-font: 'Raleway', 'Lato', sans-serif;
+$h3-font: 'Raleway', 'Lato', sans-serif;
+$h4-font: 'Raleway', 'Lato', sans-serif;
+$h5-font: 'Raleway', 'Lato', sans-serif;
+$h6-font: 'Raleway', 'Lato', sans-serif;
+
+/**
+**HEADING SIZE
+**/
+$h1-size: 36px;
+$h2-size: 20px;
+$h3-size: 24px;
+$h4-size: 18px;
+$h5-size: 16px;
+$h6-size: 14px;
+
+/**
+**HEADING COLOR VARS
+**/
+$h1-color: $storm-primary;
+$h2-color: $black;
+$h3-color: $black;
+$h4-color: $black;
+$h5-color: $black;
+$h6-color: $black;
+
+
+/**
+**    BODY TYPOGRAPHY VARS
+**
+**/
+
+/**
+*
+* Main typography styles
+* body,h1,h2,h3,h4,h5, a
+*
+**/
+
+h1,
+.h1 {
+  font-family: $h1-font;
+  font-size: $h1-size;
+
+}
+
+h2,
+.h2 {
+  font-family: $h2-font;
+  font-size: $h2-size;
+}
+
+h3,
+.h3 {
+  font-family: $h3-font;
+  font-size: $h3-size;
+}
+
+h4,
+.h4 {
+  font-family: $h4-font;
+  font-size: $h4-size;
+}
+
+h5,
+.h5 {
+  font-family: $h4-font;
+  font-size: $h5-size;
+}
+
+h6,
+.h6 {
+  font-family: $h4-font;
+  font-size: $h6-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $h-font;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: lighter;
+
+}
+
+/**
+** NORMAL FONTS
+**/
+$normal-text-primary:  'Raleway', 'Lato', sans-serif;
+$normal-text-seconday:  'Raleway', 'Lato', sans-serif;
+$normal-text-tertiary: 'Raleway', 'Lato', sans-serif;
+
+/**
+**BODY FONTS
+**/
+$normal-size-primary: 16px;
+$normal-size-seconday: 18px;
+$normal-size-tertiary: 14px;
+
+/**
+**BODY COLOR VARS
+**/
+$normal-color-primary: $glacier-quaternary;
+$normal-color-seconday: $storm-quaternary;
+$normal-color-tertiary: $storm-quaternary;
+
+.quotes {
+  font-family: $normal-text-seconday;
+  font-style: italic;
+  font-size: $normal-size-primary;
+  width: 50%;
+  margin: auto;
+}
+
+
+.normal-text {
+  font-family: $normal-text-primary;
+  font-weight: lighter;
+  font-size: $normal-size-tertiary;
+  line-height: 1.42857143;
+  color: $normal-color-seconday;
+  background-color: $white;
+}
+
+a {
+  font-family: $h4-font;
+  font-weight: lighter;
+  font-size: $normal-size-tertiary;
+  letter-spacing: 4px;
+}

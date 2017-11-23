@@ -1,0 +1,63 @@
+/**-------------------------------**\
+**
+**        # COLOR PALLETE #
+**
+\**-------------------------------**/
+
+
+/**
+**
+**    PROJECT COLOR DICTSIONARY
+**
+**/
+
+//COLOR BURNT-CLAY
+$burnt-clay-primary: #753838;
+$burnt-clay-secondary: #916060;
+$burnt-clay-tertiary: #A57D7D;
+$burnt-clay-quaternary: #5c1515;
+
+//COLOR STORM
+$storm-primary: #5A728D;
+$storm-secondary: #8C9CAF;
+$storm-tertiary: #335071;
+$storm-quaternary: #14365C;
+
+//COLOR GLACIER
+$glacier-primary: #6E9093;
+$glacier-secondary: #9CB3B5;
+$glacier-tertiary: #487377;
+$glacier-quaternary: #306165;
+
+
+
+/**
+**
+**    PRIMARY COLORS
+**
+**/
+$primary-color-one: $burnt-clay-primary;
+
+$primary-color-two: $storm-primary;
+
+$primary-color-three: $glacier-primary;
+//Note: "primary-color" is a global varriable to affect all locations of the primary color. Where as defining the primary color as a varriable is to easy the use of acess to centrailzed colors via natrual language.
+
+
+
+/**
+**
+**    FOUNDATIONAL COLORS
+**
+**/
+//COLOR WHITE
+$white: #FFFFFF;
+
+//COLOR BLACK
+$black: #000000;
+
+//COLOR SLATE
+$slate: #6C6C6C;
+
+//COLOR CLOUDY
+$cloudy: #D8D8D8;

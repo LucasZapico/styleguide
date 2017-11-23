@@ -335,7 +335,7 @@ h6,
   font-size: 14px; }
 
 h1, h2, h3, h4, h5, h6 {
-  font-family: "Cormorant+Garamond", "Quattrocento", "Raleway", "Lato", "Roboto", sans-serif;
+  font-family: "Raleway", "Lato", "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
   font-weight: lighter; }

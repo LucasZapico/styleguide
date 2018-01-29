@@ -1,0 +1,62 @@
+.sidebar {
+  flex: 0 0 20em;
+  background-color: $cloudy;
+  color: $dark;
+  transition: flex .4s ease-out;
+  // border-left: 1px solid $dark;
+
+  .squish-container {
+    button {
+      opacity: 0;
+    }
+  }
+
+  .sidebar-content {
+
+    padding-left: 1.5em;
+    h3, h5 {
+      text-align: center;
+      padding-left: .5em;
+      margin: 0;
+    }
+
+    form {
+      padding: 1em;
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+}
+.hide {
+  flex: 0 0 0;
+  .squish-container {
+    width: 2em;
+
+  }
+}
+
+@media screen and (min-width: 50em){
+  .sidebar {
+    .squish-container {
+      button {
+        opacity: 1;
+        border: none;
+        background-color: inherit;
+        padding: .8em;
+        padding-right: 1.5em;
+        transition: all .2s ease-out;
+
+        svg {
+          transform: scale(1.4);
+        }
+      }
+      button:hover {
+        transform:  scale(1.5);
+      }
+      button:focus {
+        outline: none;
+      }
+    }
+  }
+}

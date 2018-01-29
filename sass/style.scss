@@ -3,9 +3,9 @@
 **    FORMATING FOUNDATION
 **
 **/
-@import 'foundation/_base.scss';
 @import 'foundation/_normalize.scss';
 @import 'foundation/_accessibility.scss';
+@import 'foundation/_base.scss';
 
 /**
 **
@@ -14,31 +14,22 @@
 **/
 @import 'color-type-font/_font.scss';
 @import 'color-type-font/_color-palette.scss';
-@import 'color-type-font/_typography.scss';
-
+@import 'color-type-font/_typography-base.scss';
+@import 'color-type-font/_typography-new.scss';
 /**
 **
-**    LAYOUTS
+**    MODULE
 **
 **/
-@import 'layout/_layout.scss';
-
-/**
-**  NAVIGATION
-**/
-@import '_navigation.scss';
-
-/**
-**  HEADINGS
-**/
-@import 'layout/_headings.scss';
+@import 'modules/_sidebar.scss';
+@import 'modules/_footer.scss';
 
 /**
 **  SECTION
 **/
-/******** COLOR-PALLET_SECTION *******/
-@import 'layout/section/color-palette-section.scss';
-@import 'layout/section/typography-section.scss';
+/******** COLOR-palette_SECTION *******/
+@import 'sections/_color-palette-section.scss';
+@import 'sections/_typography-section.scss';
 
 
 /***********************************/

@@ -1,232 +1,156 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Style Guide Mark Down</title>
-      <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all">
-  </head>
-  <body class="normal-text">
-    <header class="masthead">
-      <div>
-        <nav class="top-nav">
-          <ul>
-            <li>
-              <a href="#">home</a>
-            </li>
-            <li>
-              <a href="#color-pallet-section">Color Pallet</a>
-            </li>
-            <li>
-              <a href="#typography-section">Typography</a>
-            </li>
-          </ul>
-        </nav> <!-- .top-nav -->
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Style Guide Mark Down</title>
+  <script defer src="https://use.fontawesome.com/releases/v5.0.6/js/all.js"></script>
+  <link rel="stylesheet" href="stylesheets/style.css" type="text/css" media="all">
+</head>
+
+<body class="wrap">
+  <header class="header">
+    <nav class="top-nav">
+      <ul>
+        <li>
+          <a href="#">home</a>
+        </li>
+        <li>
+          <a href="#color-palette-section">color palette</a>
+        </li>
+        <li>
+          <a href="#typography-section">Typography</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- .top-nav -->
+    <div class="masthead">
+      <h1 class="title">Style Guide Project</h1>
+      <img class="logo" src="./logosm.png" />
+    </div>
+    <!-- .masthead -->
+  </header>
+  <div class="main-wrap">
+    <main>
+      <section class="color-palette">
+        <h2 class="section-title">Color Palette</h2>
+        <hr width="30%">
+        <section class="primary-colors">
+          <h3 class="subsection-title">Primary Colors</h3>
+          <div class="color-container">
+            <div class="swatch-container">
+              <div id="swatch-one" class="swatch">
+              </div>
+              <h6 id="swatch-one-code">#254691</h6>
+              </div>
+              <!-- .swatch-container -->
+              <div class="swatch-container">
+                <div id="swatch-two" class="swatch">
+                </div>
+                <h6 id="swatch-two-code">#912546</h6>
+              </div>
+              <!-- .swatch-container -->
+              <div class="swatch-container">
+                <div id="swatch-three" class="swatch">
+                </div>
+                <h6 id="swatch-three-code">#2D6B3A</h6>
+              </div>
+              <!-- .swatch-container -->
+          </div>
+          <!-- .color-container-->
+        </section>
+        <!-- .primary-colors -->
+        <section class="secondary-colors">
+          <h3 class="subsection-title">Secondary Colors</h3>
+          <div class="color-container">
+            <div class="swatch-container">
+              <div id="swatch-four" class="swatch">
+              </div>
+              <h6 id="swatch-one-code">#333030</h6>
+              </div>
+              <!-- .swatch-container -->
+              <div class="swatch-container">
+                <div id="swatch-five" class="swatch">
+                </div>
+                <h6 id="swatch-two-code">#fafafa</h6>
+              </div>
+              <!-- .swatch-container -->
+              <div class="swatch-container">
+                <div id="swatch-six" class="swatch">
+                </div>
+                <h6 id="swatch-three-code">#FFFFFF</h6>
+              </div>
+              <!-- .swatch-container -->
+              <div class="swatch-container">
+                <div id="swatch-seven" class="swatch">
+                </div>
+                <h6 id="swatch-three-code">#00000</h6>
+              </div>
+              <!-- .swatch-container -->
+          </div>
+          <!-- .color-container-->
+        </section>
+        <!-- .secondary-colors -->
+      </section>
+      <!-- .color-palette -->
+      <section class="typography">
+        <h2 class="section-title">Typography</h2>
+        <hr width="30%">
+        <section class="font-details">
+          <h5>Font Family: Raleway</h5>
+          <h5>Font Weight: Light</h5>
+        </section>
+        <section class="font-examples">
+          <h1>heading 1</h1>
+          <h2>heading 2</h2>
+          <h3>heading 3</h3>
+          <h4>heading 4</h4>
+          <h5>heading 5</h5>
+          <h6>heading 6</h6>
+          <h5>Body</h5>
+          <p>
+            Maecenas nec placerat enim. Maecenas elementum urna orci, eget interdum metus semper ac. Etiam laoreet vel sem id pretium. Cras posuere bibendum tellus, ut rutrum libero blandit nec. Fusce in justo quis sapien ullamcorper accumsan. Aenean aliquam massa dolor, in malesuada tortor tempor vel. In sed orci quis sapien pellentesque porttitor vitae vitae turpis. Donec vehicula nisi vel nulla finibus, nec tincidunt nisl pellentesque. Etiam a porttitor purus. Aliquam vestibulum congue ipsum vel auctor. Pellentesque ac malesuada ante. Nulla eget risus sit amet justo posuere congue ut sit amet ante.
+          </p>
+        </section>
+      </section>
+      <!-- .typography -->
+    </main>
+    <div class="sidebar" id="sidebar">
+      <div class="squish-container">
+        <button id="toggle-sidebar"><i class="fas fa-ellipsis-v"></i></button>
+        <div class="sidebar-content">
+          <h3>Custom Styles</h3>
+          <form>
+            <h5>Primary Colors</h5>
+            <label>color one</label>
+            <input id="input-color-one" placeholder="#712591" />
+            <label>color two</label>
+            <input id="input-color-two" placeholder="#259171" />
+            <label>color three</label>
+            <input id="input-color-three" placeholder="#254691" />
+            <!-- <h4>Secondary Colors</h4>
+            <label>color four</label>
+            <input id="input-color-one" placeholder="#712591" />
+            <label>color five</label>
+            <input id="input-color-two" placeholder="#259171" />
+            <label>color six</label>
+            <input id="input-color-three" placeholder="#254691" /> -->
+          </form>
+        </div>
       </div>
-      <div class="centered">
-        <div class="title-box">
-          <h1 class="site-title">Style Guide Project</h1>
-        </div>
-        <hr class="site-title-hr" />
-      </div>
-    </header><!-- .masthead -->
-
-    <main class="main-area ">
-
-      <section id="color-pallet-section" class="color-pallet-section">
-        <div class="section-title-container">
-          <h1 class="section-title">color palette</h1>
-        </div>
-
-        <div>
-            <h2 class="sub-title">Primary Colors</h2>
-        </div>
-
-        <div class="swatch-section">
-          <!-- START primary swatch section -->
-          <div class="primary-swatch swatch-section">
-            <div class="swatch-details">
-                <ul>
-                  <li>
-                    <h6>Burnt-Clay</h6>
-                  </li>
-                  <li>
-                    <div class="swatch primary-swatch-one"></div>
-                  </li>
-                  <li>
-                    3753838
-                  </li>
-                </ul>
-            </div>
-            <div class="swatch-details">
-                <ul>
-                  <li>
-                    <h6>Glacier</h6>
-                  </li>
-                  <li>
-                    <div class="swatch primary-swatch-two"></div>
-                  </li>
-                  <li>
-                    6E9093
-                  </li>
-                </ul>
-            </div>
-            <div class="swatch-details">
-                <ul>
-                  <li>
-                    <h6>Storm</h6>
-                  </li>
-                  <li>
-                    <div class="swatch primary-swatch-three"></div>
-                  </li>
-                  <li>
-                    5A728D
-                  </li>
-                </ul>
-            </div>
-          </div>
-          <!-- END primary swatch section -->
-        </div>
-
-          <div>
-              <h2 class="sub-title">Secondary Colors</h2>
-          </div>
-
-          <div class="swatch-section">
-            <!-- START secondary swatch section -->
-              <div class="swatch-details secondary-swatch">
-                  <ul>
-                    <li>
-                      <h6>slate</h6>
-                    </li>
-                    <li>
-                      <div class="swatch slate-swatch"></div>
-                    </li>
-                    <li>
-                      6C6C6C
-                    </li>
-                  </ul>
-              </div>
-              <div class="swatch-details">
-                  <ul>
-                    <li>
-                      <h6>Cloudy</h6>
-                    </li>
-                    <li>
-                      <div class="swatch cloudy-swatch"></div>
-                    </li>
-                    <li>
-                      D8D8D8
-                    </li>
-                  </ul>
-              </div>
-              <div class="swatch-details">
-                  <ul>
-                    <li>
-                      <h6>White</h6>
-                    </li>
-                    <li>
-                      <div class="swatch white-swatch"></div>
-                    </li>
-                    <li>
-                      FFFFF
-                    </li>
-                  </ul>
-              </div>
-              <div class="swatch-details">
-                  <ul>
-                    <li>
-                      <h6>black</h6>
-                    </li>
-                    <li>
-                      <div class="swatch black-swatch"></div>
-                    </li>
-                    <li>
-                      00000
-                    </li>
-                  </ul>
-              </div>
-              <!-- END secondary swatch section -->
-        </div>
-
-      </section><!-- color pallet section END -->
-
-      <section id="typography-section" class="typography-section">
-        <div class="section-title-container">
-          <h1 class="section-title">typography</h1>
-        </div>
-
-        <div>
-          <h2 class="sub-title">headings</h2>
-          <div class="font-details">
-            <h4>Family: Raleway</h4>
-            <h4>Primary Weight: Light</h4>
-            <h4>Kernal: 7</h4>
-          </div>
-        </div>
-
-        <hr class="sub-title-hr"/>
-        <div class="heading heading-details">
-          <ul>
-            <li>
-              <h1>Heading 1</h1>
-            </li>
-            <li>
-              <h2>Heading 2</h2>
-            </li>
-            <li>
-              <h3>Heading 3</h3>
-            </li>
-            <li>
-              <h4>Heading 4</h4>
-            </li>
-            <li>
-              <h5>Heading 5</h5>
-            </li>
-            <li>
-              <h6>Heading 6</h6>
-            </li>
-          </ul>
-          <ul class="px">
-            <li>
-              <h1>36px</h1>
-            </li>
-            <li>
-              <h2>34px</h2>
-            </li>
-            <li>
-              <h3>32px</h3>
-            </li>
-            <li>
-              <h4>30px</h4>
-            </li>
-            <li>
-              <h5>28px</h5>
-            </li>
-            <li>
-              <h6>26px</h6>
-            </li>
-          </ul>
-        </div>
-        <h2 class="sub-title">Body Text</h2>
-        <div class="font-details">
-          Family: Raleway</br>
-          Primary Weight: Light</br>
-          size: 14px
-        </br>
-
-        </br/>
-        </div>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec quis pharetra urna, quis scelerisque quam. Nam cursus posuere metus ut fringilla. Donec tristique, nulla et laoreet ultrices, arcu lectus venenatis purus, posuere consequat lectus risus vitae nunc. Quisque orci nisl, efficitur vel laoreet id, blandit interdum velit. Aliquam erat volutpat. Cras dictum, odio ac porttitor mattis, arcu arcu tempus neque, vitae posuere nibh dui vitae justo. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </p>
-
-
-
-      </section><!-- .heading section END -->
-    </main><!-- .main-area -->
-
-
-  </body>
-</html>
+      <!-- .squish-container -->
+    </div>
+    <!-- .sidebar -->
+  </div>
+  <!-- .main-wrap -->
+  <footer>
+    <ul>
+      <li>
+        <a href="./about.html">about project</a>
+      </li>
+    </ul>
+  </footer>
+  <script type="text/javascript" src="src/script.js"></script>
+</body>

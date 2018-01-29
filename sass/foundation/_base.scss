@@ -1,14 +1,7 @@
-/*--------------------------------------------------------------
-Layouts
---------------------------------------------------------------*/
-
-.centered {
-    margin: 0 auto;
-    padding: 0 1em;
+ul {
+  list-style-position: inside;
 }
 
-@media screen and (min-width: 52em) {
-    .centered {
-        max-width: 52em;
-    }
+a {
+  text-decoration: none;
 }

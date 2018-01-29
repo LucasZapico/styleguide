@@ -4,28 +4,23 @@
 **
 **/
 /*--------------------------------------------------------------
-Layouts
---------------------------------------------------------------*/
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
-@import url("https://fonts.googleapis.com/css?family=Quattrocento");
-@import url("https://fonts.googleapis.com/css?family=Raleway");
-@import url("https://fonts.googleapis.com/css?family=Lato");
-@import url("https://fonts.googleapis.com/css?family=Roboto");
-@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
-@import url("https://fonts.googleapis.com/css?family=Quattrocento");
-.centered {
-  margin: 0 auto;
-  padding: 0 1em; }
-
-@media screen and (min-width: 52em) {
-  .centered {
-    max-width: 52em; } }
-/*--------------------------------------------------------------
 CSS Reset
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento");
+@import url("https://fonts.googleapis.com/css?family=Raleway");
+@import url("https://fonts.googleapis.com/css?family=Lato");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+@import url("https://fonts.googleapis.com/css?family=Cormorant+Garamond");
+@import url("https://fonts.googleapis.com/css?family=Quattrocento");
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -237,6 +232,12 @@ Accessibility
   z-index: 100000;
   /* Above WP toolbar */ }
 
+ul {
+  list-style-position: inside; }
+
+a {
+  text-decoration: none; }
+
 /**
 **
 **    STYLING FOUNDATION
@@ -249,7 +250,7 @@ Accessibility
 \**-------------------------------**/
 /**-------------------------------**\
 **
-**        # COLOR PALLETE #
+**        # COLOR paletteE #
 **
 \**-------------------------------**/
 /**
@@ -267,12 +268,9 @@ Accessibility
 **    FOUNDATIONAL COLORS
 **
 **/
-/**-------------------------------**\
-**
-**       # TYPOGRAPHY #
-**Description: This file consists of SASS typography settings
-**
-\**-------------------------------**/
+/*--------------------------------------------------------------
+Typography
+--------------------------------------------------------------*/
 /**
 **    FONT IMPORTS
 **/
@@ -281,323 +279,253 @@ Accessibility
 **        # FONTS #
 **
 \**-------------------------------**/
+body,
+button,
+input,
+select,
+textarea {
+  color: #404040;
+  font-family: 'Raleway', 'Lato', sans-serif;
+  font-size: 16px;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  clear: both; }
+
+p {
+  margin-bottom: 1.5em; }
+
+b,
+strong {
+  font-weight: bold; }
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic; }
+
+blockquote {
+  margin: 0 1.5em; }
+
+address {
+  margin: 0 0 1.5em; }
+
+pre {
+  background: #eee;
+  font-family: "Courier 10 Pitch", Courier, monospace;
+  font-size: 15px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 1.6em;
+  max-width: 100%;
+  overflow: auto;
+  padding: 1.6em; }
+
+code,
+kbd,
+tt,
+var {
+  font: 15px Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
+
+abbr,
+acronym {
+  border-bottom: 1px dotted #666;
+  cursor: help; }
+
+mark,
+ins {
+  background: #fff9c0;
+  text-decoration: none; }
+
+sup,
+sub {
+  font-size: 75%;
+  height: 0;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline; }
+
+sup {
+  bottom: 1ex; }
+
+sub {
+  top: .5ex; }
+
+small {
+  font-size: 75%; }
+
+big {
+  font-size: 125%; }
+
+/**-------------------------------**\
+**
+**       # TYPOGRAPHY #
+**Description: This file consists of SASS typography settings
+**
+\**-------------------------------**/
 /**
-**    HEADING TYPOGRAPHY VARS
+**    DEPENDENCIES IMPORTS
+**/
+/**-------------------------------**\
+**
+**        # FONTS #
+**
+\**-------------------------------**/
+/**-------------------------------**\
+**
+**        # COLOR paletteE #
+**
+\**-------------------------------**/
+/**
+**
+**    PROJECT COLOR DICTSIONARY
 **
 **/
 /**
-**HEADING FONTS
-**/
-/**
-**HEADING SIZE
-**/
-/**
-**HEADING COLOR VARS
-**/
-/**
-**    BODY TYPOGRAPHY VARS
 **
+**    PRIMARY COLORS
+**
+**/
+/**
+**
+**    FOUNDATIONAL COLORS
+**
+**/
+/**
+** HEADING VARIABLES: TYPOGRAPHY
 **/
 /**
 *
-* Main typography styles
-* body,h1,h2,h3,h4,h5, a
+* Heading typography styles
+* h,h1,h2,h3,h4,h5
 *
 **/
 h1,
 .h1 {
   font-family: "Raleway", "Lato", sans-serif;
-  font-size: 36px; }
+  font-size: 2em; }
 
 h2,
 .h2 {
   font-family: "Raleway", "Lato", sans-serif;
-  font-size: 20px; }
+  font-size: 1.8em; }
 
 h3,
 .h3 {
   font-family: "Raleway", "Lato", sans-serif;
-  font-size: 24px; }
+  font-size: 1.6em; }
 
 h4,
 .h4 {
   font-family: "Raleway", "Lato", sans-serif;
-  font-size: 18px; }
+  font-size: 1.4em; }
 
 h5,
 .h5 {
   font-family: "Raleway", "Lato", sans-serif;
-  font-size: 16px; }
+  font-size: 1.2em; }
 
 h6,
 .h6 {
   font-family: "Raleway", "Lato", sans-serif;
-  font-size: 14px; }
+  font-size: 1em; }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: "Raleway", "Lato", "Roboto", sans-serif;
   text-transform: uppercase;
   letter-spacing: 4px;
-  font-weight: lighter; }
-
-/**
-** NORMAL FONTS
-**/
-/**
-**BODY FONTS
-**/
-/**
-**BODY COLOR VARS
-**/
-.quotes {
-  font-family: "Raleway", "Lato", sans-serif;
-  font-style: italic;
-  font-size: 16px;
-  width: 50%;
-  margin: auto; }
-
-.normal-text {
-  font-family: "Raleway", "Lato", sans-serif;
   font-weight: lighter;
-  font-size: 14px;
-  line-height: 1.42857143;
-  color: #14365C;
-  background-color: #FFFFFF; }
-
-a {
-  font-family: "Raleway", "Lato", sans-serif;
-  font-weight: lighter;
-  font-size: 14px;
-  letter-spacing: 4px; }
+  padding: .3em; }
 
 /**
 **
-**    LAYOUTS
+**    MODULE
 **
 **/
-/**-------------------------------**\
-**
-**        # LAYOUT #
-**
-\**-------------------------------**/
-.centered {
-  margin: 0 auto;
-  padding: 0 1em; }
-
-@media screen and (min-width: 52em) {
-  .centered {
-    max-width: 52em; } }
-.main-area {
-  max-width: 1000px;
-  margin: auto; }
-
-section {
-  margin-top: 2em;
-  margin-bottom: 5em; }
-
-/**----------------------------------**\
-**
-**    LAYOUT COMPONENT COLORS
-**
-\**----------------------------------**/
-/**
-**  NAVIGATION
-**/
-/**-------------------------------**\
-**
-**        # STYLING OF SITE NAV #
-**
-\**-------------------------------**/
-/**
-**
-**       # STYLING OF TOP NAV #
-**
-**/
-.top-nav {
+.sidebar {
+  flex: 0 0 20em;
   background-color: #D8D8D8;
-  position: relative;
-  overflow: hidden;
-  top: 0;
-  position: fixed;
-  width: 100%; }
-  .top-nav ul {
-    list-style-type: none;
-    display: flex;
-    justify-content: space-around; }
-  .top-nav li {
-    flex: 1 0 auto;
-    text-align: center; }
-  .top-nav a {
-    text-transform: uppercase;
-    color: #916060; }
-  .top-nav a:link {
-    text-decoration: none; }
-  .top-nav a:visited {
-    text-decoration: none; }
-  .top-nav a:hover {
-    text-decoration: underline; }
-  .top-nav a:active {
-    text-decoration: underline; }
+  color: #333030;
+  transition: flex .4s ease-out; }
+  .sidebar .squish-container button {
+    opacity: 0; }
+  .sidebar .sidebar-content {
+    padding-left: 1.5em; }
+    .sidebar .sidebar-content h3, .sidebar .sidebar-content h5 {
+      text-align: center;
+      padding-left: .5em;
+      margin: 0; }
+    .sidebar .sidebar-content form {
+      padding: 1em;
+      display: flex;
+      flex-direction: column; }
 
-/**
-**  HEADINGS
-**/
-/**-------------------------------**\
-**
-**        # STYLING OF SITE HEADING AND SUB-HEADINGS #
-**
-\**-------------------------------**/
-/**
-**
-**       # STYLING OF SITE-TITLE HEADING #
-**
-**/
-.site-title {
-  margin: 1em 1em 1em 1em;
-  margin-top: 2em;
-  padding: 1em 0;
-  color: #753838;
-  text-align: center;
-  text-transform: uppercase;
-  font-size: 50px;
-  letter-spacing: 8px;
-  font-weight: normal; }
+.hide {
+  flex: 0 0 0; }
+  .hide .squish-container {
+    width: 2em; }
 
-.site-title-hr {
-  align-self: center;
-  width: 40%;
-  border-style: inset; }
-
-/**
-**      # HEADING STYLING #
-**
-**/
-.heading {
-  text-transform: uppercase;
-  padding: 2em; }
-
-/**
-**      # STYLING OF SECTION MAIN HEADING #
-**/
-.section-title-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  flex-direction: row;
-  width: 100%; }
-
-.section-title {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  text-align: center;
-  text-transform: uppercase;
-  border-bottom: 3px solid; }
-
-/**
-**      # STYLING OF SECTION SUB-HEADING #
-**/
-.sub-title {
-  color: #753838;
-  text-transform: uppercase;
-  padding-left: 1em; }
-
-.sub-title-hr {
-  width: 20%;
-  align-self: left; }
-
+@media screen and (min-width: 50em) {
+  .sidebar .squish-container button {
+    opacity: 1;
+    border: none;
+    background-color: inherit;
+    padding: .8em;
+    padding-right: 1.5em;
+    transition: all .2s ease-out; }
+    .sidebar .squish-container button svg {
+      transform: scale(1.4); }
+  .sidebar .squish-container button:hover {
+    transform: scale(1.5); }
+  .sidebar .squish-container button:focus {
+    outline: none; } }
 /**
 **  SECTION
 **/
-/******** COLOR-PALLET_SECTION *******/
-/**-------------------------------**\
-**
-**        # STYLING OF THE COLOR PALETTE SECTION #
-**
-\**-------------------------------**/
-/*---------------------vvv PLAYGROUND vvv-------------------------*/
-.swatch-details {
-  flex: 1; }
-  .swatch-details ul {
-    padding: 0; }
-  .swatch-details li {
-    margin-top: 2em;
-    margin-bottom: 2em;
-    width: 100%;
-    list-style-type: none;
-    align-content: center;
-    text-align: center;
-    list-style-position: inside; }
-    .swatch-details li div {
-      margin: auto; }
+/******** COLOR-palette_SECTION *******/
+section {
+  max-width: 80em;
+  margin: auto; }
+  section .color-container {
+    display: flex;
+    justify-content: space-around; }
+    section .color-container .swatch-container {
+      display: flex;
+      flex-direction: column; }
+      section .color-container .swatch-container .color-title {
+        text-align: center; }
+      section .color-container .swatch-container .swatch {
+        height: 3em;
+        width: 3em;
+        margin: auto;
+        border-radius: 100%;
+        background-color: steelblue;
+        box-shadow: 2px 2px 5px grey; }
+      section .color-container .swatch-container h6 {
+        font-size: .6em; }
 
-.primary-swatch {
-  margin-bottom: 2em;
-  width: 100%; }
-
-/*---------------------vvv STABLE vvv-------------------------*/
-.color-pallet-section {
-  padding-top: 1em;
-  padding-bottom: 1em;
-  border-width: 3px; }
-
-.swatch-section {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  list-style-type: none;
-  padding: 0; }
-
-.swatch {
-  height: 5em;
-  width: 5em;
-  border-radius: 100%;
-  box-shadow: 2px 2px 5px grey; }
-
-.swatch.primary-swatch-one {
-  background-color: #6E9093; }
-
-.swatch.primary-swatch-two {
-  background-color: #5A728D; }
-
-.swatch.primary-swatch-three {
-  background-color: #753838; }
-
-.slate-swatch {
-  background-color: #6C6C6C; }
-
-.cloudy-swatch {
-  background-color: #D8D8D8; }
-
-.white-swatch {
-  background-color: #FFFFFF; }
-
-.black-swatch {
-  background-color: #000000; }
-
-/**-------------------------------**\
-**
-**        # STYLING OF THE TYPOGRAPHY SECTION #
-**
-\**-------------------------------**/
-.typography-section {
-  margin: 2em; }
-  .typography-section p {
-    margin-left: 2em;
-    margin-right: 2em; }
-
-.font-details {
-  padding-left: 2em; }
-
-.heading-details {
-  display: flex;
-  justify-content: space-around; }
-  .heading-details li {
-    list-style-type: none;
-    list-style-position: inside; }
-
-.px {
-  text-transform: lowercase; }
+@media screen and (min-width: 35em) {
+  section .color-container .swatch-container .swatch {
+    height: 5em;
+    width: 5em;
+    margin: auto;
+    border-radius: 100%;
+    background-color: steelblue;
+    box-shadow: 2px 2px 5px grey; }
+  section .color-container .swatch-container h6 {
+    font-size: 1em; } }
+.typography section {
+  padding: 1em; }
+  .typography section h1, .typography section h2, .typography section h3, .typography section h4, .typography section h5, .typography section h6 {
+    text-align: left;
+    padding: .2em;
+    margin: 0; }
 
 /***********************************/
 /**-------------------------------**\
@@ -605,5 +533,56 @@ section {
 **        # CATCH #
 **    This is a catch for elements and styles that I have not sorted yet
 \**-------------------------------**/
+.wrap h1, .wrap h2 {
+  text-align: center;
+  text-transform: uppercase; }
+.wrap header {
+  padding-bottom: 2em; }
+  .wrap header .top-nav {
+    width: 100%;
+    margin: 0; }
+    .wrap header .top-nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0; }
+      .wrap header .top-nav ul a {
+        box-sizing: border-box;
+        display: block;
+        height: 3em;
+        padding: .6em;
+        background-color: #fafafa;
+        border: 1px solid #fafafa;
+        border-bottom: 1px solid #333030;
+        color: #333030;
+        text-transform: capitalize;
+        transition: all .2s ease-out; }
+      .wrap header .top-nav ul a:hover {
+        border: 1px solid #333030; }
+  .wrap header .masthead .logo {
+    height: 5em;
+    width: 5em;
+    margin: auto;
+    object-fit: contain; }
+
+@media screen and (min-width: 50em) {
+  .main-wrap {
+    display: flex; }
+    .main-wrap main {
+      flex: 1 1 auto;
+      width: 100%;
+      background-color: #fafafa; }
+      .main-wrap main section {
+        max-width: 45em; } }
+@media screen and (min-width: 30em) {
+  .top-nav ul {
+    display: flex;
+    flex: wrap;
+    justify-content: space-between; }
+  .top-nav li {
+    text-align: center;
+    flex: 1 0 auto; }
+  .top-nav a {
+    padding: .4em;
+    color: #FFFFFF; } }
 
 /*# sourceMappingURL=style.css.map */

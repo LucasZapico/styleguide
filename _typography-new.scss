@@ -1,0 +1,158 @@
+/**-------------------------------**\
+**
+**       # TYPOGRAPHY #
+**Description: This file consists of SASS typography settings
+**
+\**-------------------------------**/
+
+/**
+**    FONT IMPORTS
+**/
+@import '_font.scss';
+
+/*-----------------------------------------*/
+$base-font-size: 18px;
+$base-font-color: $slate;
+$base-font-family: 'Raleway', 'Lato', sans-serif;
+$bae-line-height: 1.5;
+
+/*-----------------------------------------*/
+
+/**
+**HEADING FONTS
+**/
+$heading-font--family: 'Raleway', 'Lato','Roboto', sans-serif;
+$h1-font-family: 'Raleway', 'Lato', sans-serif;
+$h2-font-family: 'Raleway', 'Lato', sans-serif;
+$h3-font-family: 'Raleway', 'Lato', sans-serif;
+$h4-font-family: 'Raleway', 'Lato', sans-serif;
+$h5-font-family: 'Raleway', 'Lato', sans-serif;
+$h6-font-family: 'Raleway', 'Lato', sans-serif;
+
+/*---------------------------*/
+
+body,
+button,
+input,
+select,
+textarea {
+  color: $base-font-color;
+  font-family: $base-font-family;
+  font-size: $base-font-size;
+  line-height: $base-line-height;
+}
+
+
+body,
+caption,
+th,
+td,
+input,
+textarea,
+select,
+option,
+legend,
+fieldset,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+
+}
+
+p {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+b,
+strong {
+  font-weight: bold;
+}
+
+dfn,
+cite,
+em,
+i {
+  font-style: italic;
+}
+
+blockquote {
+  margin: 0 1.5em;
+}
+
+address {
+  margin: 0 0 1.5em;
+}
+
+
+/**
+*
+* Main typography styles
+* body,h1,h2,h3,h4,h5, a
+*
+**/
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  clear: both;
+}
+
+h1,
+.h1 {
+  font-family: $h1-font-family;
+  font-size: $h1-font-size;
+
+}
+
+h2,
+.h2 {
+  font-family: $h2-font-family;
+  font-size: $h2-font-size;
+}
+
+h3,
+.h3 {
+  font-family: $h3-font;
+  font-size: $h3-font-size;
+}
+
+h4,
+.h4 {
+  font-family: $h4-font;
+  font-size: $h4-font-size;
+}
+
+h5,
+.h5 {
+  font-family: $h4-font;
+  font-size: $h5-font-size;
+}
+
+h6,
+.h6 {
+  font-family: $h4-font-family;
+  font-size: $h6-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: $heading-font-family;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: lighter;
+}
+
+
+a {
+  font-family: $h4-font-family;
+  font-weight: lighter;
+  font-size: $normal-size-tertiary;
+  letter-spacing: 4px;
+}

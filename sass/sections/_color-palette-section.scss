@@ -1,0 +1,52 @@
+// COLOR paletteE SECTION
+  section {
+    max-width: 80em;
+    margin: auto;
+
+    .color-container {
+      display: flex;
+      justify-content: space-around;
+
+
+      .swatch-container {
+        display: flex;
+        flex-direction: column;
+
+        .color-title {
+          text-align: center;
+        }
+
+        .swatch {
+          height: 3em;
+          width: 3em;
+          margin: auto;
+          border-radius: 100%;
+          background-color: steelblue;
+          box-shadow: 2px 2px 5px grey;
+        }
+        h6 {
+          font-size: .6em;
+        }
+      }
+    }
+  }
+@media screen and (min-width: 35em) {
+  section {
+    .color-container {
+      .swatch-container {
+        .swatch {
+          height: 5em;
+          width: 5em;
+          margin: auto;
+          border-radius: 100%;
+          background-color: steelblue;
+          box-shadow: 2px 2px 5px grey;
+        }
+
+        h6 {
+          font-size: 1em;
+        }
+      }
+    }
+  }
+}

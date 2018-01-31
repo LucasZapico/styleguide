@@ -122,37 +122,18 @@
         <button id="toggle-sidebar"><i class="fas fa-ellipsis-v"></i></button>
         <div class="sidebar-content">
           <h3>Custom Styles</h3>
-          <form>
-            <div class="sidebar-section">
-              <h5>Primary Colors</h5>
-              <label>color one</label>
-              <input id="input-color-one" placeholder="#712591" />
-              <label>color two</label>
-              <input id="input-color-two" placeholder="#259171" />
-              <label>color three</label>
-              <input id="input-color-three" placeholder="#254691" />
-            </div>
-
-            <h5>Typography</h5>
-            <textarea id="typography-input" placeholder='<link href="https://fonts.googleapis.com/css?family=Merriweather:300" rel="stylesheet">'></textarea>
-            <label>Heading 1</label>
-            <input id="input-color-one" placeholder="Merriweather" />
-            <label>Heading 2</label>
-            <input id="input-color-one" placeholder="Merriweather" />
-            <label>Heading 3</label>
-            <input id="input-color-one" placeholder="Merriweather" />
-            <label>Heading 4</label>
-            <input id="input-color-one" placeholder="Merriweather" />
-            <label>Heading 5</label>
-            <input id="input-color-one" placeholder="Merriweather" />
-            <!-- <h4>Secondary Colors</h4>
-            <label>color four</label>
-            <input id="input-color-one" placeholder="#712591" />
-            <label>color five</label>
-            <input id="input-color-two" placeholder="#259171" />
-            <label>color six</label>
-            <input id="input-color-three" placeholder="#254691" /> -->
-          </form>
+            <section class="color-input">
+              <input class="checkbox" id="ac-color" type="checkbox" />
+              <label class="color-label" for="ac-color"><h5>Primary Colors</h5><i class="fas fa-angle-down"></i></label>
+              <div class="ac-content">
+                <label>color one</label>
+                <input id="input-color-one" placeholder="#712591" />
+                <label>color two</label>
+                <input id="input-color-two" placeholder="#259171" />
+                <label>color three</label>
+                <input id="input-color-three" placeholder="#254691" />
+              </div><!-- .ac-content -->
+            </section><!-- .color-input -->
         </div>
       </div>
       <!-- .squish-container -->

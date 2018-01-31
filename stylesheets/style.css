@@ -452,19 +452,54 @@ h1, h2, h3, h4, h5, h6 {
   flex: 0 0 20em;
   background-color: #D8D8D8;
   color: #333030;
-  transition: flex .4s ease-out; }
+  transition: flex 0.4s ease-out; }
   .sidebar .squish-container button {
     opacity: 0; }
   .sidebar .sidebar-content {
     padding-left: 1.5em; }
-    .sidebar .sidebar-content h3, .sidebar .sidebar-content h5 {
+    .sidebar .sidebar-content h3,
+    .sidebar .sidebar-content h5 {
       text-align: center;
-      padding-left: .5em;
+      padding-left: 0.5em;
       margin: 0; }
-    .sidebar .sidebar-content form {
-      padding: 1em;
-      display: flex;
-      flex-direction: column; }
+    .sidebar .sidebar-content section {
+      padding-left: .5em; }
+      .sidebar .sidebar-content section label {
+        display: block;
+        margin-right: 1em; }
+        .sidebar .sidebar-content section label h5 {
+          text-align: center;
+          display: inline-block; }
+        .sidebar .sidebar-content section label svg {
+          padding-left: .5em;
+          font-size: 1.5em; }
+      .sidebar .sidebar-content section .color-label:hover {
+        border-bottom: 1px solid #333030; }
+      .sidebar .sidebar-content section .color-label:focus {
+        border-bottom: 1px solid #333030; }
+      .sidebar .sidebar-content section .checkbox {
+        display: none; }
+      .sidebar .sidebar-content section .ac-content {
+        height: 0;
+        overflow: hidden;
+        padding-top: .5em;
+        transition: height 0.3s ease-in; }
+        .sidebar .sidebar-content section .ac-content label {
+          display: block;
+          font-size: .8em;
+          padding-left: .5em; }
+        .sidebar .sidebar-content section .ac-content input {
+          display: block;
+          width: 90%;
+          margin-right: 50px; }
+      .sidebar .sidebar-content section input:checked ~ .ac-content {
+        height: 12em;
+        overflow: hidden;
+        transition: height 0.3s ease-in; }
+    .sidebar .sidebar-content input::placeholder,
+    .sidebar .sidebar-content textarea::placeholder {
+      color: #C1C1C1;
+      font-size: 0.8em; }
 
 .hide {
   flex: 0 0 0; }
@@ -476,9 +511,8 @@ h1, h2, h3, h4, h5, h6 {
     opacity: 1;
     border: none;
     background-color: inherit;
-    padding: .8em;
-    padding-right: 1.5em;
-    transition: all .2s ease-out; }
+    padding: 0.8em 1.5em 0.8em 0.8em;
+    transition: all 0.2s ease-out; }
     .sidebar .squish-container button svg {
       transform: scale(1.4); }
   .sidebar .squish-container button:hover {
